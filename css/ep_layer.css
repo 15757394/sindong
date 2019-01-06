@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* 验证码重写 */
+body .layer-check-code {
+    border-radius: 5px;
+    overflow: hidden;
+}
+body.mobile .layer-check-code{
+  overflow: visible;
+}
+.layer-check-code .layui-layer-btn a{
+  font-size: 14px;
+}
+.layer-check-code .layer-code{
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  height: 42px;
+  margin-bottom: 35px;
+  }
+  .layer-check-code * {
+    box-sizing: border-box;
+  }
+  .layer-check-code .layui-layer-title {
+    background: #f6f6f6;
+    /* background-color: #dd2726; */
+    /* color: #ffffff; */
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .layer-check-code .layui-layer-setwin .layui-layer-close1{
+    background: url("/template/Public/img/close.png") no-repeat center center;
+  }
+  .layer-check-code .layer-code-span {
+    width: 84px;
+    line-height: 42px;
+    text-align: right;
+    font-weight:bold;
+    float: left;
+    font-size: 14px;
+    color: #666;
+  }
+  .layer-check-code .layer-code-input {
+    width: 38%;
+    line-height: 32px;
+    height: 42px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    text-align: left;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    border-radius: 5px;
+  }
+  .layer-check-code .layer-code-img {
+    width: 33%;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    float: left;
+    margin-left: 15px;
+  }
+  .layer-check-code .layer-code-img img {
+    /* width: 100%; */
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .layer-check-code .layui-layer-btn {
+    padding: 10px 15px;
+    background-color: #f5f9fa;
+  }
+  .layer-check-code .layui-layer-btn .layui-layer-btn0 {
+    /* border-color: transparent;
+    color: #FFF;
+    background: #dd2726; */
+    margin-right: 10px;
+  }
+  .layer-check-code .layui-layer-btn a{
+    margin-top: 0;
+    line-height: 34px;
+    height: 36px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .layer-check-code .layui-layer-btn1{
+      /* background-color: transparent;
+      color: #dd2726;
+      border-color:#dd2726; */
+  }
+  .layer-check-code .layui-layer-btn1:hover{
+    color: #333;
+    /* color: #FFF;
+    background: #dd2726; */
+}
+
+/* layer 警告弹框 */
+.layer-custom-dialog.layui-layer-dialog .layui-layer-padding{
+    padding: 25px;
+    padding-left: 80px;
+}
+.layer-custom-dialog.layui-layer-dialog .layui-layer-content{
+    line-height: 36px;
+}
+.layer-custom-dialog.layui-layer-dialog{
+    min-width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.layer-custom-dialog.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    width: 48px;
+    height: 48px;
+}
+.layer-custom-warn.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+    background: url('/template/Public/lib/plugin/jQuery/dialog/skins/icons/alert.gif') no-repeat center center;
+    background-size: contain;
+}
+
+.layer-custom-error.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+  background: url('/template/Public/lib/plugin/jQuery/dialog/skins/icons/error.gif') no-repeat center center;
+  background-size: contain;
+}
+
+.layer-custom-success.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+    background: url('/template/Public/lib/plugin/jQuery/dialog/skins/icons/success.gif') no-repeat center center;
+    background-size: contain;
+}
+
+.layer-custom-loading .layui-layer-ico8{
+  background: url('/template/Public/lib/plugin/jQuery/dialog/skins/icons/loading.gif') no-repeat center center;
+  background-size: contain;
+}
+/* 
+.mobile .layer-check-code .layui-layer-title{
+  font-size: .32rem;
+} */
+
+@media screen and (max-width:720px){
+    [contenteditable = "true"], input, textarea {
+      -webkit-user-select: auto!important;
+      -khtml-user-select: auto!important;
+      -moz-user-select: auto!important;
+      -ms-user-select: auto!important;
+      -o-user-select: auto!important;
+      user-select: auto!important;
+  }
+  .mobile .layer-check-code .layui-layer-setwin a,
+    .mobile .layer-custom-dialog .layui-layer-setwin a{
+    width: 20px;
+    height: 20px;
+  }
+  .mobile .layer-check-code .mobile .layui-layer-btn a,
+    .mobile .ayer-custom-dialog .layui-layer-btn a{
+    font-size: .24rem;
+  }
+  .mobile .layer-check-code .layui-layer-btn a{
+    line-height: 0.58rem;
+    height: 0.6rem;
+  }
+  .layer-check-code .layer-code-img{
+    width: 1.8rem;
+  }
+  .layer-check-code .layer-code-input{
+    line-height: normal;
+    width: 100px;
+  }
+  .mobile input{
+    -webkit-user-select:auto;
+  }
+}
+/* 320px 屏幕适配 */
+@media screen and (max-width:320px){
+    .layer-check-code .layer-code-span{
+      width: 1.5rem;
+    }
+    .layer-check-code .layer-code-input{
+      padding: 0;
+      width: 2rem;
+    }
+    .layer-check-code .layui-layer-btn a{
+      padding: 0 .2rem;
+    }
+  
+  }
+
+  
