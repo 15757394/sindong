@@ -3,10 +3,9 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>{$common_nav_title} - {$common_site_name}</title>
-	<meta name="keywords" content="{$common_keywords}" />
-	<meta name="description" content="{$common_description}" />
-	<meta name="renderer" content="webkit" />
+	<title>1</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/public.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/vue.min.js"></script>
@@ -14,45 +13,6 @@
 	<script src="js/layer.js"></script>
 	<script src="js/EP.js"></script>
 	<link rel="stylesheet" href="css/ep_layer.css">
-	<!-- <script src="/template/Public/lib/framework/jquery-ui-custom/jquery-ui-1.11.4.custom.min.js"></script> -->
-	<!-- <script type="text/javascript">
-		window.jQuery || document.write('<script type="text/javascript" src="/template/Public/lib/framework/jquery.min.js">\x3C/script>')
-	</script> -->
-
-<!--[if lte IE 9]>
-<script src="/template/Public/lib/browser/PIE.js"></script>
-<![endif]-->
-<!--[if IE 7]>
-	<script charset="utf-8">
-		$(function () {
-			$("a").attr("hidefocus", true);
-			$('body').addClass('IE7_hack');
-			$('.service-lis .link').find('li').eq(0).css({'marginLeft':'0'});
-			$('.service-lis .link').find('li').eq(1).css({'marginLeft':'130px'});
-			$('.service-lis .link').find('li').eq(2).css({'marginLeft':'130px'});
-		});
-	</script>
-	<![endif]-->
-	<!--[if IE 8]>
-	<script charset="utf-8">
-		$(function () {
-			$('body').addClass('IE8_hack');
-		});
-	</script>
-	<![endif]-->
-
-	<!--[if IE]>
-	<script charset="utf-8">
-		$(function () {
-			$('body').addClass('IE_hack');
-		});
-	</script>
-	<![endif]-->
-	<script>
-		// 密码范围
-		var __min_pwd = '{$min_pwd}';
-		var __max_pwd = '{$max_pwd}';
-	</script>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/newIndex.css">
 	<link rel="stylesheet" href="css/new20180812.css">
@@ -60,135 +20,9 @@
 	<script src="js/iframeTools.js"></script>
 	<link rel="stylesheet" href="css/swiper-4.1.0.min.css">
 	<script src="js/swiper-4.1.0.min.js"></script>
-	<!--[if IE]> 
-	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$('body').addClass('IE_hack');
-			$('#banner').removeClass('mouse-event');
-			$('#banner .swiper-container').addClass('picture');	
-			$('#banner .imgs').css({"width":window.screen.availWidth+'px'});
-			$('#banner .btnn').show();
-			$('#banner .btnn').css({"zIndex":"100"});
-			banner($('#banner .swiper-picture'));
-		})		
-	</script>
-	<![endif]-->
+	<script src="js/headerMenu.js"></script>
 </head>
 <body>
-<script src="js/headerMenu.js"></script>
-<style>
-#shouye-nav .logo a img{
-	max-height: 70px;
-}
-#login .login_list{
-	line-height: 29px;
-	height: 30px;
-	float: left;
-	position: relative;
-	padding: 0 1px;
-	cursor: pointer;
-}
-#login .login_list .login{
-	border-right: none;
-	position: relative;
-	padding: 0 5px 0 10px;
-	z-index: 12;
-}
-#login .login_list .login a{
-	color: #666;
-	font-size: 12px;
-	margin: 0;
-}
-.login_list .login_methods{
-	position: absolute;
-	top: 30px;
-	left: -1px;
-	width: 130px;
-	height: 0;
-	overflow: hidden;
-	background: #fff;
-	z-index: 200;
-	border: solid 1px #e6e6e6;
-	border-top: none;
-	box-sizing: border-box;
-	border: none;
-}
-#login .login_list .login_methods a{
-	font-size: 12px;
-	color: #666;
-	display: block;
-	overflow: hidden;
-    margin: 0;
-	margin-bottom: 2px;
-}
-#login .login_list .login_methods a:last-child{
-	margin-bottom: 0;
-}
-#login .login_list .login_methods a .login_icon_qq{
-	float: left;
-	width: 30px;
-	height: 30px;
-	background-image: url("/template/Home/Default/PC/Static/img/load.png");
-    background-position: 0 0;
-	transform: scale(0.8);
-}
-#login .login_list .login_methods a .login_icon_weixin{
-	float: left;
-	width: 30px;
-	height: 30px;
-	background-image: url("/template/Home/Default/PC/Static/img/load.png");
-	background-position: -60px 0;
-	transform: scale(0.8);
-}
-#login .login_list .login_methods a span{
-	float: left;
-	line-height: 30px;
-	font-size: 12px;
-}
-#login .login_list .login_methods a:hover span{
-	color: #e2383a;
-}
-#login .login_list:hover{
-	background: #fff;
-	border-left: 1px solid #e6e6e6;
-	border-right: 1px solid #e6e6e6;
-	padding: 0;
-}
-#login .login_list:hover .login_methods{
-	height: auto;
-	padding: 10px 15px;
-}	
-#login .login_list span.arrow {
-  border-style: solid dashed dashed dashed;
-  border-color: #b3b3b3 transparent transparent transparent;
-  border-width: 5px 5px 0;
-  overflow: hidden;
-  font-size: 0;
-  height: 0;
-  width: 0;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transition: 0 ease-in;
-  -moz-transition: 0 ease-in;
-  -o-transition: 0 ease-in;
-  transition: 0 ease-in;
-}
-#login .login_list:hover span.arrow {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-#login .arrow{
-	display: none;
-}
-table { 
-    border-collapse: collapse; 
-    border-spacing: 0; 
-}
-</style>
 <!--头部  -->
 <div class="header" id="hearderTop">
 <div class="center">
@@ -199,7 +33,7 @@ table {
 </div>
  <div class="nav" id="shouye-nav">
  <div class="center">
-<h1 class="logo hearder-logo"><a href="/"><img src="http://suifainc.com/Uploads/2018-12-08/5c0bcee58614b.png" alt="logo" title="SuiFaINC"></a></h1>
+<h1 class="logo hearder-ogo"><a href="/"><img src="images/logo.png" alt="logo" title="SuiFaINC"></a></h1>
 <div class="navLis">
 			<ul><li _menu_nav="0"><a href="/home"  title="/">首页</a></li>
 			    <li _menu_nav="1"><a href="/trademark"  title="/">商标 · 知产</a></li>
@@ -276,94 +110,9 @@ table {
 </div>
 </div>
 </div>
-<!-- 验证码 -->
-<!-- <div class="layer-code-wrap hide">
-	<div class="layer-code">
-		<span class="layer-code-span">验证码：</span>
-		<input type="text" class="layer-code-input"  id="layerCheckCode"  placeholder="请输入验证码"  name="layerCheckCode" autofocus="autofocus">
-		<span class="layer-code-img">
-			<img src="/?m=api&c=captcha&rnd=@{RAND}" alt="看不清楚，换一张" srcset="" onclick="EP.refreshCode(this);">
-		</span>
-	</div>
-</div> -->
 
 <!-- 弹框 -->
-<div id="alert_wrap_box" class="alert_wrap_box" style="display: none;">
-	<div id="alert_wrap">
-		<div class="alert_top">
-			<div class="icon_left"></div>
-			<div class="desc_center">
-				<p class="desc_title">商标免费查询</p>
-				<p class="desc_span">专业顾问人工查询 ，结果分析更准确</p>
-			</div>
-			<div class="close_right">×</div>
-		</div>
-		<div class="alert_center">
-			<div class="alert_form">
-				<input type="hidden" name="type" id="form_type" value="2">
-				<div class="inp_div">
-					<label for="" class="inp_label">品牌名称：</label>
-					<input type="text" name="trade_name" required id="trade_name" class="inp_input" placeholder="请输入商标名称">
-					<i class="warn_icon">*</i>
-				</div>
-				<div class="inp_div">
-					<label for="" class="inp_label">您的尊称：</label>
-					<input type="text" name="you_name" required id="you_name" class="inp_input" placeholder="如李先生/女士">
-					<i class="warn_icon">*</i>
-				</div>
-				<div class="inp_div">
-					<label for="" class="inp_label">您的电话：</label>
-					<input type="text" name="you_phone" required id="you_phone" class="inp_input" placeholder="信息保护中，请放心填写">
-					<i class="warn_icon">*</i>
-				</div>
-				<div class="inp_div check-code" style="margin-bottom: 20px;">
-					<label for="" class="inp_label">验证码：</label>
-					<input type="text" name="you_yzm" required id="you_yzm" class="inp_input">
-					<img alt="不清楚？换一张" src="/?m=api&c=captcha&rnd=@{RAND}" class="show-captcha" title="不清楚？点击换个图片">
-				</div>
-				<div class="button_div">
-					<button type="button" class="button_left" id="submit_need" onclick="submit_need();">提交，坐等顾问回复我</button>
-					<div class="button_right" id="self_search">我要自助查询</div>
-				</div>
-			</div>
-			<div class="alert_success hide">
-				<div class="success_icon"></div>
-				<div class="success_info">
-					<p>恭喜您的查询已经成功提交</p>
-					<span>请耐心等待，知识产权顾问将会电话联系您反馈查询结果</span>
-				</div>
-				<a href="javascript:;" class="success_btnn">
-					我要自助查询
-				</a>
-			</div>
-		</div>
-		<div class="alert_bottom">
-			<div class="ab_title">
-				<b></b>
-				<p>您还可以通过以下方式联系我们</p>
-			</div>
-			<div class="link_method">
-				<div class="link_desc">
-					<div class="ld_top">
-						<i class="ld_icon"></i>
-						<p>{$basic.service_hotline}</p>
-					</div>
-					<div class="ld_bottom">
-						<i class="ld_icon"></i>
-						<p><a href="http://wpa.qq.com/msgrd?v=3&uin={$basic.qq}&site=qq&menu=yes" target="_blank">{$basic.qq}</a></p>
-					</div>
-				</div>
-				<div class="link_wx">
-					<i class="ld_icon"></i>
-					<!-- <i class="ld_icon_arrow"></i> -->
-					<div class="alert_img">
-						<img src="{$basic.wxLogo}" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 </br>
 </br>
 </br>
